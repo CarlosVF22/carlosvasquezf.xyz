@@ -1,0 +1,11 @@
+.NavBarContainer{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+.NavBarContainer li{
+    padding: 1%;
+    cursor: pointer;
+}
