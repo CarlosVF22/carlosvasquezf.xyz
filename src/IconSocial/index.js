@@ -1,20 +1,11 @@
 import React from "react";
 import './IconSocial.css';
-import {ReactComponent as LinkedinSVG} from './linkedin.svg';
+import {FaInstagram} from 'react-icons/fa';
 
-const iconTypes = {
-    "Linkedin":(
-        <LinkedinSVG/>
-    ),
-};
-
-function IconSocial({type,color ='gray',onClick}){
+function IconSocial () {
     return(
-        <span
-            className={`Icon-container Icon-container--${type}`}
-            onClick={onClick}
-        >
-            {iconTypes[type]}
+        <span>
+            <FaInstagram/>
         </span>
     );
 }
