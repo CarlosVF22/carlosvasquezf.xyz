@@ -1,0 +1,7 @@
+#headerBackground-img--container{
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+    filter: grayscale(60%);
+    position: relative;
+}
