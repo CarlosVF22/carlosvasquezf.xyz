@@ -1,25 +1,31 @@
 import './App.css';
+import '../index.css';
 import {NavBar} from '../NavBar';
 import {Header} from '../Header';
 import {GithubIcon} from '../IconSocial/GitHubIcon';
 import {LinkedlinIcon} from '../IconSocial/LinkedlinIcon';
 import {PlatziIcon} from '../IconSocial/PlatziIcon';
 import {HeaderBackground} from '../HeaderBackground';
-import {Section} from '../Section';
+import {Title} from '../Title';
 
 function App() {
     const navBarItems = ['Home','Contactame','ayuda'];
-    const iconSection = ['icon-section']; 
     return (
         <Header>
             <HeaderBackground/>
-            <Section>
+            <section className="icon-section">
                 <GithubIcon/>
                 <LinkedlinIcon/>
                 <PlatziIcon/>
-            </Section>
+            </section>
             <NavBar
                 items = {navBarItems}
+            />
+            <Title
+                strings={[
+                    'Desarrollador frontend',
+                    'Desarrollador backend'
+                ]}
             />
         </Header>
         

@@ -3,7 +3,9 @@ import{FaLinkedin} from 'react-icons/fa';
 
 function LinkedlinIcon (){
     return(
-            <FaLinkedin/>
+            <span>
+                <FaLinkedin/>
+            </span>
         );
 }
 

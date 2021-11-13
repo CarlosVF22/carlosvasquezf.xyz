@@ -3,7 +3,9 @@ import {BsGithub} from 'react-icons/bs';
 
 function GithubIcon () {
     return(
-            <BsGithub/>
+            <span>
+                <BsGithub/>
+            </span>
     );
 }
 

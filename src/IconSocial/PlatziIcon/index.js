@@ -3,7 +3,9 @@ import {SiPlatzi} from 'react-icons/si'
 
 function PlatziIcon (){
     return(
-                <SiPlatzi/>
+        <span>
+            <SiPlatzi/>
+        </span>
     );
 }
 

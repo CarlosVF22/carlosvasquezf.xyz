@@ -1,0 +1,13 @@
+.icon-section{
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    padding: 10px;
+}
+.icon-section span{
+    padding: 5px;
+}
+.icon-section span svg{
+    width: 3vw;
+    height: auto;
+}
