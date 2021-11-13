@@ -1,13 +1,16 @@
+.header{
+    display: flex;
+    color: whitesmoke;
+    background-color: black;
+    justify-content: space-between;
+    -webkit-box-shadow: 1px 17px 10px -3px #E3E3E3; 
+    box-shadow: 1px 17px 7px -3px #E3E3E3;
+    
+}
 .icon-section{
-    position: absolute;
-    top: 0px;
-    z-index: 2;
-    padding: 10px;
+    padding: 1rem ;
 }
-.icon-section span{
-    padding: 5px;
-}
-.icon-section span svg{
-    width: 3vw;
-    height: auto;
+.main-section{
+    background-color: #545252;
+    color: whitesmoke;
 }

@@ -1,9 +1,10 @@
 import React from "react";
-import {SiPlatzi} from 'react-icons/si'
+import {SiPlatzi} from 'react-icons/si';
+import "../IconSocial.css";
 
 function PlatziIcon (){
     return(
-        <span>
+        <span className="icon">
             <SiPlatzi/>
         </span>
     );

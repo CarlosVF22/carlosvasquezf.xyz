@@ -1,35 +1,39 @@
 import './App.css';
 import '../index.css';
-import {NavBar} from '../NavBar';
-import {Header} from '../Header';
-import {GithubIcon} from '../IconSocial/GitHubIcon';
-import {LinkedlinIcon} from '../IconSocial/LinkedlinIcon';
-import {PlatziIcon} from '../IconSocial/PlatziIcon';
-import {HeaderBackground} from '../HeaderBackground';
-import {Title} from '../Title';
+import '../IconSocial/IconSocial.css'
+import { NavBar } from '../NavBar';
+import { GithubIcon } from '../IconSocial/GitHubIcon';
+import { LinkedlinIcon } from '../IconSocial/LinkedlinIcon';
+import { PlatziIcon } from '../IconSocial/PlatziIcon';
+// import { HeaderBackground } from '../HeaderBackground';
+import { Title } from '../Title';
+import React from 'react';
 
 function App() {
-    const navBarItems = ['Home','Contactame','ayuda'];
     return (
-        <Header>
-            <HeaderBackground/>
-            <section className="icon-section">
-                <GithubIcon/>
-                <LinkedlinIcon/>
-                <PlatziIcon/>
-            </section>
-            <NavBar
-                items = {navBarItems}
-            />
-            <Title
-                strings={[
-                    'Desarrollador frontend',
-                    'Desarrollador backend'
-                ]}
-            />
-        </Header>
-        
+        <React.Fragment>
+            <header className="header">
+                <div className="icon-section">
+                    <GithubIcon />
+                    <LinkedlinIcon />
+                    <PlatziIcon />
+                </div>
+                <NavBar
+                    items={['Home', 'Contactame', 'ayuda','otro']}
+                />
+            </header>
+            <main className="main-section">
+                <Title
+                    strings={[
+                        'soy desarrollador frontend',
+                        'soy desarrollador backend'
+                    ]}
+                    string_base={"¡Hola soy Carlos Eduardo y"}
+                />
+            </main>
+        </React.Fragment>
+
     );
 }
 
-export {App};
+export { App };

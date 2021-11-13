@@ -1,7 +1,9 @@
 #headerBackground-img--container{
-    max-width: 100%;
+    width: 100vw;
     height: auto;
     z-index: 1;
     filter: grayscale(60%);
     position: relative;
+    max-height: 20vh;
+    object-fit: cover;
 }
